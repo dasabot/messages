@@ -1,0 +1,196 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  /*margin: 0 auto;*/
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+.wrap {
+  width: 485px;
+}
+
+.top-bar {
+  height: 45px;
+  background: #1c1c1d;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-between;
+}
+.top-bar .user-pic img {
+  width: 42px;
+}
+.top-bar .chats-bottom {
+  font-size: 13pt;
+}
+.top-bar .chats-container {
+  position: relative;
+  display: flex;
+  padding-left: 5px;
+  align-items: center;
+}
+.top-bar .chats-container::before {
+  content: "<";
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 24pt;
+  padding-right: 0.5rem;
+}
+.top-bar .user-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.top-bar .last-seen {
+  font-size: 10pt;
+  color: #8e8e8e;
+}
+
+#main {
+  height: 470px;
+  background: #efeeeb;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+#main::-webkit-scrollbar {
+  display: none;
+}
+#main .bubble {
+  padding: 0.2vh;
+  display: flex;
+  flex-direction: row;
+  background: black;
+  color: white;
+  margin-top: 5px;
+  position: relative;
+  max-width: 75%;
+}
+#main .bubble .bubble-text {
+  padding-left: 5px;
+  padding-right: 39px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+#main .bubble .bubble-time {
+  color: #8e8e8e;
+  font-size: 8pt;
+  padding-right: 10px;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  position: absolute;
+  padding-bottom: 3px;
+}
+#main .bubble.mine {
+  align-self: flex-end;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 10px;
+  margin-right: 10px;
+}
+#main .bubble.yours {
+  align-self: flex-start;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 15px;
+  margin-left: 10px;
+}
+#main .bubble.yours.last::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: -8px;
+  height: 10px;
+  width: 15px;
+  border-bottom-right-radius: 17px;
+  margin-top: 12px;
+  background: black fixed;
+}
+#main .bubble.yours.last::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: -10px;
+  width: 10px;
+  height: 17px;
+  background: #efeeeb;
+  border-bottom-right-radius: 10px;
+}
+#main .bubble.mine.last::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: -8px;
+  height: 10px;
+  width: 15px;
+  border-bottom-left-radius: 17px;
+  margin-top: 12px;
+  background: black fixed;
+}
+#main .bubble.mine.last::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: -10px;
+  width: 10px;
+  height: 17px;
+  background: #efeeeb;
+  border-bottom-left-radius: 10px;
+}
+
+.footer-bar {
+  display: flex;
+  flex-direction: row;
+  height: 45px;
+  background: #1c1c1d;
+  align-items: center;
+}
+.footer-bar .attachment-container {
+  padding: 9px;
+}
+.footer-bar .attachment-container svg {
+  width: 22px;
+}
+.footer-bar .voice-container {
+  padding: 6px;
+}
+.footer-bar .voice-container svg {
+  width: 25px;
+}
+.footer-bar .writing-container {
+  width: 85%;
+  padding-top: 5px;
+}
+.footer-bar .writing-container input {
+  border-radius: 20px;
+  background: #060606;
+  font-family: "Roboto", sans-serif;
+  color: #8e8e8e;
+  width: 101%;
+  margin: 0;
+  height: 33px;
+  border: 1px solid #8e8e8e;
+}
+.footer-bar .writing-container input:focus {
+  outline: none;
+}
+
+#input-file {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="939c3cb5-4552-4ed3-8e50-11fbab7a16fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fKUprDBRElAxPRKKNCoPUl8nRP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../old/index.html" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\chatik\img" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="939c3cb5-4552-4ed3-8e50-11fbab7a16fc" name="Default Changelist" comment="" />
+      <created>1595966463875</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595966463875</updated>
+      <workItem from="1595966465546" duration="3186000" />
+      <workItem from="1596291398685" duration="22000" />
+      <workItem from="1596291559888" duration="5106000" />
+      <workItem from="1596314918760" duration="3324000" />
+      <workItem from="1596374973886" duration="1445000" />
+      <workItem from="1596395937857" duration="1411000" />
+      <workItem from="1596446474002" duration="2593000" />
+      <workItem from="1596539825737" duration="2499000" />
+      <workItem from="1598785860524" duration="886000" />
+      <workItem from="1598813361118" duration="2487000" />
+      <workItem from="1598891385337" duration="6574000" />
+      <workItem from="1598963799730" duration="9130000" />
+      <workItem from="1599491688911" duration="1859000" />
+      <workItem from="1599582100937" duration="2958000" />
+      <workItem from="1599655772495" duration="14923000" />
+      <workItem from="1599739329219" duration="12846000" />
+      <workItem from="1599825795773" duration="595000" />
+      <workItem from="1599826412301" duration="5717000" />
+      <workItem from="1599858194334" duration="2606000" />
+      <workItem from="1600026517732" duration="3977000" />
+      <workItem from="1600169493786" duration="6335000" />
+      <workItem from="1600255285763" duration="8791000" />
+      <workItem from="1601550876336" duration="1314000" />
+      <workItem from="1601720200598" duration="1637000" />
+      <workItem from="1601721919522" duration="8807000" />
+      <workItem from="1601980473485" duration="10125000" />
+      <workItem from="1602021192377" duration="1498000" />
+      <workItem from="1602070597936" duration="85000" />
+      <workItem from="1602070825001" duration="501000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="438" y="191" key="EditFileWatcherDialog" timestamp="1601721797123">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="438" y="191" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1601721797123" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1600263643853">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600263643853" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1601721789787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601721789787" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1602021893535">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1602021893535" />
+  </component>
+</project>
