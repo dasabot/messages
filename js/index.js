@@ -86,8 +86,25 @@ function getAnswer() {
     fillYourBubble(text, currentTime);
 }
 
+//-----------------------------------------------------------------------------------
+const modalWrap = document.querySelector(".modal-wrap");
+const modalContainer = document.querySelector(".modal-container");
+const attachButton = document.querySelector(".attachment-container");
 
-console.log(lastSeen);
+attachButton.onclick = function () {
+    modalWrap.classList.toggle('hidden');
+    modalContainer.style.bottom = "10px";
+};
+
+modalWrap.onclick = function () {
+    modalContainer.style.bottom = "-336px";
+    const hiddenModalWrap = () => modalWrap.classList.toggle('hidden');
+    setTimeout(hiddenModalWrap, 250);
+}
+
+
+
+
 
 
 

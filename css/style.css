@@ -161,12 +161,16 @@ a {
 }
 .footer-bar .attachment-container {
   padding: 9px;
+  background: none;
+  border-style: none;
 }
 .footer-bar .attachment-container svg {
   width: 22px;
 }
 .footer-bar .voice-container {
   padding: 6px;
+  background: none;
+  border-style: none;
 }
 .footer-bar .voice-container svg {
   width: 25px;
@@ -185,9 +189,6 @@ a {
   height: 33px;
   border: 1px solid #8e8e8e;
 }
-.footer-bar .writing-container input:focus {
-  outline: none;
-}
 
 #input-file {
   display: none;
@@ -196,18 +197,21 @@ a {
 .modal-wrap {
   width: 485px;
   height: 560px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.1);
   z-index: 999999;
   position: absolute;
   top: 8px;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .modal-wrap .modal-container {
   position: absolute;
   width: 95%;
   height: 60%;
-  bottom: 10px;
+  bottom: -336px;
+  transition-property: bottom;
+  transition-duration: 0.3s;
 }
 .modal-wrap .modal-container .modal {
   height: 80%;
@@ -245,6 +249,10 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 13pt;
   cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
