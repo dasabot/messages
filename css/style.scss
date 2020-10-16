@@ -213,7 +213,10 @@ a {
       margin: 0;
       height: 33px;
       border: 1px solid #8e8e8e;
-      
+
+      &:focus {
+        outline: none;
+      }
     }
   }
 }

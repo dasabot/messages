@@ -96,7 +96,9 @@ attachButton.onclick = function () {
     modalContainer.style.bottom = "10px";
 };
 
-modalWrap.onclick = function () {
+modalWrap.onclick = function (event) {
+    let target = event.target;
+    if (target.className !== 'modal-wrap') return;
     modalContainer.style.bottom = "-336px";
     const hiddenModalWrap = () => modalWrap.classList.toggle('hidden');
     setTimeout(hiddenModalWrap, 250);
