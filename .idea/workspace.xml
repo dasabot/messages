@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="939c3cb5-4552-4ed3-8e50-11fbab7a16fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/download-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/download-circular-button.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/download.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/IMG_6536.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/iconfinder_Arrows_circle_arrow_direction_download_down_6578875.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/photo_2020-10-16_18-51-27.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
@@ -98,6 +99,10 @@
       <workItem from="1602615305573" duration="6176000" />
       <workItem from="1602696282757" duration="7525000" />
       <workItem from="1602761279346" duration="5048000" />
+      <workItem from="1602843477207" duration="1650000" />
+      <workItem from="1602862990849" duration="13589000" />
+      <workItem from="1602966292135" duration="737000" />
+      <workItem from="1603022921121" duration="310000" />
     </task>
     <servers />
   </component>

@@ -74,10 +74,12 @@ a {
   max-width: 75%;
 }
 #main .bubble .bubble-text {
+  width: 100%;
   padding-left: 5px;
   padding-right: 39px;
   padding-top: 2px;
   padding-bottom: 2px;
+  overflow-wrap: break-word;
 }
 #main .bubble .bubble-time {
   color: #8e8e8e;
@@ -150,6 +152,26 @@ a {
   height: 17px;
   background: #efeeeb;
   border-bottom-left-radius: 10px;
+}
+#main .bubble.file {
+  position: relative;
+}
+#main .bubble.file .download-icon {
+  padding: 4px;
+}
+#main .bubble.file .container {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+  padding-top: 3px;
+}
+#main .bubble.file .container .file-name {
+  position: relative;
+}
+#main .bubble.file .container .file-size {
+  position: relative;
+  color: #8e8e8e;
+  font-size: 8pt;
 }
 
 .footer-bar {

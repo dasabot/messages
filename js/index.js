@@ -90,6 +90,10 @@ function getAnswer() {
 const modalWrap = document.querySelector(".modal-wrap");
 const modalContainer = document.querySelector(".modal-container");
 const attachButton = document.querySelector(".attachment-container");
+const cancelButton = document.querySelector(".cancel");
+const inputFile = document.getElementById("input-file");
+let fileName;
+let fileSize;
 
 attachButton.onclick = function () {
     modalWrap.classList.toggle('hidden');
@@ -104,9 +108,50 @@ modalWrap.onclick = function (event) {
     setTimeout(hiddenModalWrap, 250);
 }
 
+cancelButton.onclick = function (event) {
+    modalContainer.style.bottom = "-336px";
+    const hiddenModalWrap = () => modalWrap.classList.toggle('hidden');
+    setTimeout(hiddenModalWrap, 250);
+}
+
+
+inputFile.onchange = function () {
+    //let fileSize =  inputFile.size;
+    let value = inputFile.value.split('\\');
+    fileName = value[value.length - 1];
+    const size = inputFile.files.item(0).size;
+    if (size < 1000) {
+        fileSize = Math.round((size / 1000));
+    } else {
+        fileSize = Math.round(fileSize);
+    }
 
 
 
+    console.log(fileSize);
+};
 
+const Filevalidation = () => {
+    const fi = document.getElementById('file');
+    // Check if any file is selected.
+    if (fi.files.length > 0) {
+        for (const i = 0; i <= fi.files.length - 1; i++) {
+
+            const fsize = fi.files.item(i).size;
+            const file = Math.round((fsize / 1024));
+            // The size of the file.
+            if (file >= 4096) {
+                alert(
+                    "File too Big, please select a file less than 4mb");
+            } else if (file < 2048) {
+                alert(
+                    "File too small, please select a file greater than 2mb");
+            } else {
+                document.getElementById('size').innerHTML = '<b>'
+                    + file + '</b> KB';
+            }
+        }
+    }
+}
 
 
