@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="939c3cb5-4552-4ed3-8e50-11fbab7a16fc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../index.html" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -93,7 +98,8 @@
       <workItem from="1602843477207" duration="1650000" />
       <workItem from="1602862990849" duration="13589000" />
       <workItem from="1602966292135" duration="737000" />
-      <workItem from="1603022921121" duration="702000" />
+      <workItem from="1603022921121" duration="3002000" />
+      <workItem from="1603035123999" duration="7362000" />
     </task>
     <servers />
   </component>
@@ -108,17 +114,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="438" y="191" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1601721797123" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1602615300212">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1603025903268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602615300212" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603025903268" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1601721789787">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601721789787" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1602021893535">
+    <state width="622" height="446" key="SwitcherDM" timestamp="1603035222017">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1602021893535" />
+    <state width="622" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1603035222017" />
+    <state x="610" y="-11" key="run.anything.popup" timestamp="1603039676246">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="610" y="-11" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603039676246" />
   </component>
 </project>

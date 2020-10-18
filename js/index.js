@@ -11,7 +11,12 @@ const answers = [
     "ок",
     ")",
     "(",
-    "бывает"
+    "бывает",
+    "ого блин",
+    "фигова)",
+    "хых",
+    "класс!",
+    "прик",
 ];
 
 
@@ -56,7 +61,7 @@ function getRandomNumber(max) {
 }
 
 function getRandomElementFromAnswers() {
-    const randomNumber = getRandomNumber(5);
+    const randomNumber = getRandomNumber(10);
     return answers[randomNumber];
 }
 
@@ -92,66 +97,77 @@ const modalContainer = document.querySelector(".modal-container");
 const attachButton = document.querySelector(".attachment-container");
 const cancelButton = document.querySelector(".cancel");
 const inputFile = document.getElementById("input-file");
-let fileName;
+const fileBubbleTemplate = document.getElementById("bubble-template-file");
+const nameOfFileInBubble = fileBubbleTemplate.content.querySelector(".file-name");
+const sizeOfFileInBubble = fileBubbleTemplate.content.querySelector(".file-size");
+const timeOfBubbleWithFile = fileBubbleTemplate.content.querySelector(".bubble-time");
 let fileSize;
+let fileName;
+
 
 attachButton.onclick = function () {
     modalWrap.classList.toggle('hidden');
     modalContainer.style.bottom = "10px";
 };
 
+const hiddenModalWindow = () => {
+    modalContainer.style.bottom = "-336px";
+    const hiddenModalWrap = () => modalWrap.classList.toggle('hidden');
+    setTimeout(hiddenModalWrap, 250);
+}
+
 modalWrap.onclick = function (event) {
     let target = event.target;
     if (target.className !== 'modal-wrap') return;
-    modalContainer.style.bottom = "-336px";
-    const hiddenModalWrap = () => modalWrap.classList.toggle('hidden');
-    setTimeout(hiddenModalWrap, 250);
+    hiddenModalWindow();
 }
 
-cancelButton.onclick = function (event) {
-    modalContainer.style.bottom = "-336px";
-    const hiddenModalWrap = () => modalWrap.classList.toggle('hidden');
-    setTimeout(hiddenModalWrap, 250);
+cancelButton.onclick = function () {
+    hiddenModalWindow();
 }
 
-
-inputFile.onchange = function () {
-    //let fileSize =  inputFile.size;
-    let value = inputFile.value.split('\\');
-    fileName = value[value.length - 1];
-    const size = inputFile.files.item(0).size;
-    if (size < 1000) {
-        fileSize = Math.round((size / 1000));
-    } else {
-        fileSize = Math.round(fileSize);
-    }
-
-
-
-    console.log(fileSize);
+const fillFileBubble = (name, size, time) => {
+    nameOfFileInBubble.textContent = name;
+    sizeOfFileInBubble.textContent = size;
+    timeOfBubbleWithFile.textContent = time;
+    const clone = document.importNode(fileBubbleTemplate.content, true);
+    document.getElementById("main").appendChild(clone);
 };
 
-const Filevalidation = () => {
-    const fi = document.getElementById('file');
-    // Check if any file is selected.
-    if (fi.files.length > 0) {
-        for (const i = 0; i <= fi.files.length - 1; i++) {
+const sendFile = () => {
+    let value = inputFile.value.split('\\');
+    let file = inputFile.files[0].size;
 
-            const fsize = fi.files.item(i).size;
-            const file = Math.round((fsize / 1024));
-            // The size of the file.
-            if (file >= 4096) {
-                alert(
-                    "File too Big, please select a file less than 4mb");
-            } else if (file < 2048) {
-                alert(
-                    "File too small, please select a file greater than 2mb");
-            } else {
-                document.getElementById('size').innerHTML = '<b>'
-                    + file + '</b> KB';
-            }
-        }
+    fileName = value[value.length - 1];
+
+    if (file > 1000000) {
+        fileSize = Math.round(file / 1000000) + " " + "MB";
+        console.log(`${fileSize} MB`);
+    } else {
+        fileSize = Math.round(file / 1000) + " " + "KB";
+        console.log(`${fileSize} KB`);
     }
-}
+
+    const today = new Date();
+    const currentTime = (`0${today.getHours()}`).slice(-2) + ':' + (`0${today.getMinutes()}`).slice(-2);
+
+
+    const allMsg = new Array(...document.querySelectorAll('.bubble'));
+    const lastMsgInChat = allMsg.pop();
+
+    if (lastMsgInChat.classList.contains('mine') === true) {
+        lastMsgInChat.classList.remove('last');
+    }
+
+    fillFileBubble(fileName, fileSize, currentTime);
+};
+
+inputFile.onchange = function () {
+    sendFile();
+    hiddenModalWindow();
+    setTimeout(getAnswer, 5000);
+};
+
+
 
 
