@@ -91,6 +91,23 @@ function getAnswer() {
     fillYourBubble(text, currentTime);
 }
 
+const getCurrentTime = () => {
+    const date = new Date();
+    const hours = String(date.getHours()).padStart(2, "0");
+    const minutes = String(date.getMinutes()).padStart(2, "0");
+
+    return [hours, minutes].join(':');
+}
+
+const handleMessageTailChange = () => {
+    const allMsg = new Array(...document.querySelectorAll('.bubble'));
+    const lastMsgInChat = allMsg.pop();
+
+    if (lastMsgInChat.classList.contains('mine') === true) {
+        lastMsgInChat.classList.remove('last');
+    }
+}
+
 //-----------------------------------------------------------------------------------
 const modalWrap = document.querySelector(".modal-wrap");
 const modalContainer = document.querySelector(".modal-container");
@@ -101,9 +118,6 @@ const fileBubbleTemplate = document.getElementById("bubble-template-file");
 const nameOfFileInBubble = fileBubbleTemplate.content.querySelector(".file-name");
 const sizeOfFileInBubble = fileBubbleTemplate.content.querySelector(".file-size");
 const timeOfBubbleWithFile = fileBubbleTemplate.content.querySelector(".bubble-time");
-let fileSize;
-let fileName;
-
 
 attachButton.onclick = function () {
     modalWrap.classList.toggle('hidden');
@@ -135,9 +149,11 @@ const fillFileBubble = (name, size, time) => {
 };
 
 const sendFile = () => {
-    let value = inputFile.value.split('\\');
-    let file = inputFile.files[0].size;
-
+    let fileSize = '';
+    let fileName = '';
+    const value = inputFile.value.split('\\');
+    const file = inputFile.files[0].size;
+ 
     fileName = value[value.length - 1];
 
     if (file > 1000000) {
@@ -148,17 +164,9 @@ const sendFile = () => {
         console.log(`${fileSize} KB`);
     }
 
-    const today = new Date();
-    const currentTime = (`0${today.getHours()}`).slice(-2) + ':' + (`0${today.getMinutes()}`).slice(-2);
-
-
-    const allMsg = new Array(...document.querySelectorAll('.bubble'));
-    const lastMsgInChat = allMsg.pop();
-
-    if (lastMsgInChat.classList.contains('mine') === true) {
-        lastMsgInChat.classList.remove('last');
-    }
-
+    const currentTime = getCurrentTime();
+    
+    handleMessageTailChange();
     fillFileBubble(fileName, fileSize, currentTime);
 };
 
@@ -167,7 +175,3 @@ inputFile.onchange = function () {
     hiddenModalWindow();
     setTimeout(getAnswer, 5000);
 };
-
-
-
-
